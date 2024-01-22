@@ -114,14 +114,12 @@ let fagioliQnt = 50; //
 let olioQnt = 50;
 let cavolfioreQnt = 900; // diviso
 let rosmarinoQnt = 10;
-let cipolleRosseQnt = 160 // diviso
+let cipolleQnt = 160 // diviso
 let patataQnt = 130;     // divisa
-let pepeNeroQnt = 10;
 let pomodoriRamatiQnt = 120;
 let zuccaQnt = 8000; // divisa
-let porriQnt = 300;   //diviso
+let porroQnt = 300;   //diviso
 let piselliniQnt = 200;
-let foglieQnt = 10;
 
 const carote = "carote";
 const zucchinaBianca = "Zucchine bianche";
@@ -133,14 +131,22 @@ const cavolFiore = "Cavol Fiore";
 const rosmarino = "Rosmarino";
 const cipolle = "Cipolle Rosse";
 const patata = "Patate";
-const pepe = "Pepe nero";
 const pomodori = "Pomodori Ramati";
 const zucca = "Zucca";
-const porri = "Porri";
+const porro = "Porro";
 const pisellini = "Pisellini";
-const foglie = "Foglie";
 
-let piatto = null;
+let piatto = 0;
 
 console.log("Ingredienti e quantitavo in grammi per il Minestrone di verdure");
-console.log("Lavare la",zucca ,"e usatene ", 8000 - 7750);
+console.log("Lavare la",zucca ,"e usatene ", zuccaQnt - 7750,"grammi");
+console.log("Lavate e spuntate le", zucchinaBianca, "e usatene", zucchinaBiancaQnt * 3,"grammi e", cavolfioreQnt, "grammi di", cavolFiore);
+console.log("Successivamente sfogliate il", porro, "con", porroQnt, "grammi.");
+console.log("Prendete le", patata, "con", patataQnt * 3, "grammi.");
+console.log("Procedete con i", pomodori, "riduceteli a cubetti e usatene", pomodoriRamatiQnt,"grammi.");
+console.log("Spuntate e pelate le", carote, "con",caroteQnt, "grammi, e tritate finemente anche i", sedanoQnt, "grammi di", sedano);
+console.log("Per finire legate con uno spago i rametti di", rosmarino ,"con le foglie di alloro per creare un mazzetto aromatico");
+console.log("In una pentola capiente munita di coperchio versatel'", olio, "e in fine il", porro, "e",cipolle);
+console.log("aggiungere",saleFinoQnt, "di",saleFino, "e i ",fagioli, "e i",piselliniQnt, "grammi di", pisellini);
+
+console.log("In fine la quantità iniziale del piatto", piatto, "verrà a pesare", zuccaQnt - 7750 + zucchinaBiancaQnt * 3 + cavolfioreQnt / 3 + porroQnt + patataQnt * 3 + pomodoriRamatiQnt + caroteQnt + sedanoQnt +rosmarinoQnt + olioQnt + cipolleQnt / 2 + saleFinoQnt + fagioliQnt + piselliniQnt, "grammi");
